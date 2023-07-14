@@ -133,25 +133,31 @@ table {
 /* * {
   border: solid 1px red !important;
 } */
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Rubik:wght@400;500;600;700&display=swap");
+
+.body {
+  line-height: 1.5;
+  font-family: Castro, sans-serif;
+}
 
 .container {
   margin: 0 auto;
   width: 1296px;
 }
 
-header img {
+.header__img {
   display: block;
   margin: 0 auto;
 }
 
-header h1 {
+.header__h1 {
   font-size: 8rem;
   line-height: 12rem;
   margin-top: 160px;
   letter-spacing: 0.8rem;
 }
 
-header h2 {
+.header__h2 {
   text-align: right;
   font-size: 128px;
   line-height: 192px;
@@ -168,7 +174,7 @@ header h2 {
   width: 636px;
 }
 
-.description p {
+.description__paragraph {
   font-size: 32px;
   line-height: 48px;
   padding: 48px 0;
@@ -179,7 +185,7 @@ header h2 {
   width: 636px;
 }
 
-h3 {
+.profile__h3 {
   font-size: 40px;
   line-height: 60px;
   color: #ae0000;
@@ -187,19 +193,45 @@ h3 {
   border-bottom: 3px solid #ae0000;
 }
 
-h4 {
+.profile__h4 {
   font-style: italic;
   font-size: 20px;
   line-height: 30px;
   color: #949494;
 }
 
-.profile-row p {
+.profile__list {
+  list-style: none;
+}
+
+.profile__listItem {
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 8px;
   letter-spacing: 1px;
 }
+
+.profile__listItem--link {
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.5s ease;
+  border-radius: 0 10px 10px 0;
+}
+
+.profile__listItem--link:hover {
+  color: #fff;
+  text-decoration: none;
+  transform: translateX(10px);
+  background-color: #ae0000;
+}
+
+/* .profile-row p {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+} */
 
 .footer {
   background-color: #000000;
@@ -214,9 +246,13 @@ h4 {
   width: 300px;
 }
 
-.footer-container img {
+.footer-container__icon {
   padding: 64px 0;
   display: inline-block;
+}
+
+.footer-container__icon--link:hover {
+  opacity: 0.5;
 }
 
 .mt-80 {
